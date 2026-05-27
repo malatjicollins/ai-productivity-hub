@@ -61,7 +61,7 @@ function ChatbotPage() {
       />
 
       <Card className="flex flex-1 flex-col overflow-hidden shadow-soft">
-        <ScrollArea className="flex-1" viewportRef={scrollRef as any}>
+        <ScrollArea className="flex-1">
           <div ref={scrollRef} className="space-y-4 p-4 md:p-6">
             {messages.map((m) => (
               <div key={m.id} className={cn("flex gap-3 animate-in fade-in slide-in-from-bottom-2", m.role === "user" && "flex-row-reverse")}>
